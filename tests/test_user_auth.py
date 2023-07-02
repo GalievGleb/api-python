@@ -1,7 +1,7 @@
 import pytest
 import requests
-from Api_Python.lib.base_case import BaseCase
-from Api_Python.lib.assertions import Assertions
+from lib.base_case import BaseCase
+from lib.assertions import Assertions
 
 
 class TestUserAuth(BaseCase):
@@ -54,5 +54,5 @@ class TestUserAuth(BaseCase):
             response2,
             "user_id",
             0,
-            f"User is autorized with condition {condition}"
+            f"User is authorized with condition {condition}"
         )
