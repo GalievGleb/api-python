@@ -1,0 +1,10 @@
+
+-----
+Test:test_user_get.py::TestUserGet::test_get_user_details_auth_as_same_user_negative (call)
+Time:2023-08-22 07:02:53.490342
+Request method: POST
+Request URL: https://reqres.in/api/log
+Request data: <bound method BaseCase.prepare_registration_data of <Api_Python.tests.test_user_get.TestUserGet object at 0x0000026F939CAEE0>>
+Request headers: {}
+Request cookies: {}
+

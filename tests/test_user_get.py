@@ -21,3 +21,10 @@ class TestUserGet(BaseCase):
         response1 = MyRequests.post("login", data=data)
 
         Assertions.assert_json_has_key(response1, "token")
+
+    def test_get_user_details_auth_as_same_user_negative(self):
+        data = self.prepare_registration_data_negative()
+
+        response2 = MyRequests.post("login", data=data)
+
+        Assertions.assert_code_status(response2, 400)

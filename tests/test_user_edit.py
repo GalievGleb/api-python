@@ -4,7 +4,7 @@ from lib.assertions import Assertions
 
 
 class TestUserEdit(BaseCase):
-    def test_edit_just_created_user(self):
+    def test_edit_user(self):
         # REGISTER
         register_data = self.prepare_registration_data()
         response1 = MyRequests.post("/user/", data=register_data)

@@ -1,0 +1,16 @@
+
+-----
+Test:test_user_get.py::TestUserGet::test_get_user_details_auth_as_same_user_negative (call)
+Time:2023-08-22 07:04:18.403852
+Request method: POST
+Request URL: https://reqres.in/api/login
+Request data: {'email': 'FergusAndersen@reqres.in', 'password': 'Nope'}
+Request headers: {}
+Request cookies: {}
+
+Response code: 400
+Response text: {"error":"user not found"}
+Response header: {'Date': 'Tue, 22 Aug 2023 04:04:18 GMT', 'Content-Type': 'application/json; charset=utf-8', 'Content-Length': '26', 'Connection': 'keep-alive', 'X-Powered-By': 'Express', 'Access-Control-Allow-Origin': '*', 'Etag': 'W/"1a-EGIcyP6BIiCXl5Gb1aph5CGf4VQ"', 'Via': '1.1 vegur', 'CF-Cache-Status': 'DYNAMIC', 'Report-To': '{"endpoints":[{"url":"https:\\/\\/a.nel.cloudflare.com\\/report\\/v3?s=YJUyIQcXDOae1uZXV580hxWZ05%2BTlaIqfXM7FiEekfG6D8xYA2JNMPvnMiVPN58cLtd91jcA7k2dAL5yZucwzMzWI59BrhqIMjjE4kFjxSOpnoTWJxWz4DdoBA%3D%3D"}],"group":"cf-nel","max_age":604800}', 'NEL': '{"success_fraction":0,"report_to":"cf-nel","max_age":604800}', 'Server': 'cloudflare', 'CF-RAY': '7fa83b21cc559d93-DME'}
+Response cookies: {}
+
+-----
