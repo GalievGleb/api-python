@@ -5,7 +5,8 @@ from requests import Response
 
 
 class Logger:
-    log_dir = 'logs'  # Директория, в которой будут храниться логи
+    project_root = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
+    log_dir = os.path.join(project_root, 'logs')  # Директория, в которой будут храниться логи
     if not os.path.exists(log_dir):
         os.makedirs(log_dir)
 
