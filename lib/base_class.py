@@ -1,4 +1,5 @@
 import datetime
+from assertpy import assert_that
 
 
 class Base():
@@ -33,3 +34,12 @@ class Base():
         get_url = self.driver.current_url
         assert get_url == result
         print("Good value url")
+
+    """Сравнение JSON"""
+
+    def compare_json(self, expected_json_str, actual_json_str):
+        expected_json = json.loads(expected_json_str)
+        actual_json = json.loads(actual_json_str)
+
+        assert_that(actual_json).is_equal_to(expected_json)
+        print("JSON comparison successful")

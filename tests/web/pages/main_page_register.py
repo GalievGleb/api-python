@@ -18,7 +18,7 @@ class Main_page(Base):
 
     # Locators
     create_button = "//li[@data-id='post']"
-    create_json_button = "//pre[@data-key='output-response']"
+    create_json = "//pre[@data-key='output-response']"
 
     # Getters
 
@@ -26,11 +26,9 @@ class Main_page(Base):
         return WebDriverWait(self.driver, 10).until(
             EC.element_to_be_clickable((By.XPATH, self.create_button)))
 
-    def get_create_json_button(self):
+    def get_create_json(self):
         return WebDriverWait(self.driver, 10).until(
-            EC.element_to_be_clickable((By.XPATH, self.create_json_button)))
-
-
+            EC.element_to_be_clickable((By.XPATH, self.create_json)))
 
     # Action
 
@@ -38,21 +36,16 @@ class Main_page(Base):
         self.get_create_button().click()
         print("Click create button")
 
-    def click_get_create_json_button(self):
-        self.get_create_json_button().click()
-        print("Click get create json button")
-
-    def text_get_create_json_button(self):
-        self.get_create_json_button().text()
-        text = self.get_create_json_button().text
-        print("Get text json create")
-        print(text)
+    def text_get_create_json(self):
+        text = self.get_create_json().text
+        print("Get text json create_selenium")
+        return text
 
     # Methods
     def product_confirmation(self):
-        # self.get_current_url()
+        self.get_current_url()
         self.click_create_button()
-        self.get_create_json_button()
+        self.text_get_create_json()
 
 
 # Укажите путь к исполняемому файлу ChromeDriver
