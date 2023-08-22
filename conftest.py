@@ -1,7 +1,6 @@
 import pytest
 from selenium import webdriver
 
-
 @pytest.fixture(scope="function")
 def selenium_driver(request):
     # Создаем экземпляр веб-драйвера (в данном случае, Chrome)
@@ -14,3 +13,4 @@ def selenium_driver(request):
     request.addfinalizer(finalizer)
 
     return driver
+
