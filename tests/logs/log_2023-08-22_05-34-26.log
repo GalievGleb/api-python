@@ -1,0 +1,16 @@
+
+-----
+Test:test_user_register.py::TestUserRegister::test_create_user_unsuccessful (call)
+Time:2023-08-22 05:34:26.053148
+Request method: POST
+Request URL: https://reqres.in/api/register
+Request data: {'password': 'Nope', 'email': 'FergusAndersen@reqres.in'}
+Request headers: {}
+Request cookies: {}
+
+Response code: 400
+Response text: {"error":"Note: Only defined users succeed registration"}
+Response header: {'Date': 'Tue, 22 Aug 2023 02:34:26 GMT', 'Content-Type': 'application/json; charset=utf-8', 'Content-Length': '57', 'Connection': 'keep-alive', 'X-Powered-By': 'Express', 'Access-Control-Allow-Origin': '*', 'Etag': 'W/"39-6jrJxn+7f+pQUhbPgNMst7tagpA"', 'Via': '1.1 vegur', 'CF-Cache-Status': 'DYNAMIC', 'Report-To': '{"endpoints":[{"url":"https:\\/\\/a.nel.cloudflare.com\\/report\\/v3?s=ba7cZoWBnidz7rJSTHSAyq%2FHyCPkYSijGAfwA93Fh%2BJ%2BVz%2FVV%2Fas7Cko%2BGbw3UyY6rv0XXcOZhMUMdhsuvdqzhWuqb5Y9Ougqax6N%2B2Wd4eCBCLWIOskvwwHvQ%3D%3D"}],"group":"cf-nel","max_age":604800}', 'NEL': '{"success_fraction":0,"report_to":"cf-nel","max_age":604800}', 'Server': 'cloudflare', 'CF-RAY': '7fa7b77a18139daa-DME'}
+Response cookies: {}
+
+-----

@@ -1,0 +1,16 @@
+
+-----
+Test:test_user_register.py::TestUserRegister::test_create_user_with_existing_email (call)
+Time:2023-08-22 05:12:28.326176
+Request method: POST
+Request URL: https://reqres.in/api/users
+Request data: {'password': '123', 'username': 'learnqa', 'firstName': 'learnqa', 'lastName': 'learnqa', 'email': 'vinkotov@example.com'}
+Request headers: {}
+Request cookies: {}
+
+Response code: 201
+Response text: {"password":"123","username":"learnqa","firstName":"learnqa","lastName":"learnqa","email":"vinkotov@example.com","id":"869","createdAt":"2023-08-22T02:12:28.698Z"}
+Response header: {'Date': 'Tue, 22 Aug 2023 02:12:28 GMT', 'Content-Type': 'application/json; charset=utf-8', 'Content-Length': '163', 'Connection': 'keep-alive', 'X-Powered-By': 'Express', 'Access-Control-Allow-Origin': '*', 'Etag': 'W/"a3-DVJ1a4qLx5tpSlNzZLqg3Twvqlo"', 'Via': '1.1 vegur', 'CF-Cache-Status': 'DYNAMIC', 'Report-To': '{"endpoints":[{"url":"https:\\/\\/a.nel.cloudflare.com\\/report\\/v3?s=AOtkqmJa3Sb6BKqAWyfVLjaWk%2BVHQbEYgTfmQcSMisgolcjk49MKOEHTGPU2EjVLQqtXbMb0KZZn76uOs8wDt%2FitjYHdxEEO7fxS5ecnUoIGXtUIOmZQcqejHQ%3D%3D"}],"group":"cf-nel","max_age":604800}', 'NEL': '{"success_fraction":0,"report_to":"cf-nel","max_age":604800}', 'Server': 'cloudflare', 'CF-RAY': '7fa7974ebef013b4-DME'}
+Response cookies: {}
+
+-----

@@ -1,0 +1,16 @@
+
+-----
+Test:test_user_register.py::TestUserRegister::test_create_user_with_existing_email (call)
+Time:2023-08-22 05:24:38.436554
+Request method: POST
+Request URL: https://reqres.in/api/users
+Request data: {'password': 'pistol', 'email': 'eve.holt@reqres.in'}
+Request headers: {}
+Request cookies: {}
+
+Response code: 201
+Response text: {"password":"pistol","email":"eve.holt@reqres.in","id":"680","createdAt":"2023-08-22T02:24:38.708Z"}
+Response header: {'Date': 'Tue, 22 Aug 2023 02:24:38 GMT', 'Content-Type': 'application/json; charset=utf-8', 'Content-Length': '100', 'Connection': 'keep-alive', 'X-Powered-By': 'Express', 'Access-Control-Allow-Origin': '*', 'Etag': 'W/"64-G4ys8+Rgbciaih/jL8e7nCYAgMk"', 'Via': '1.1 vegur', 'CF-Cache-Status': 'DYNAMIC', 'Report-To': '{"endpoints":[{"url":"https:\\/\\/a.nel.cloudflare.com\\/report\\/v3?s=h0GjpGx%2FE1PmDJmbGF3iDv2g5JF3%2FC%2BmeP5OmLzWkea5GFkVJ3mWmHIGLhKqySzPpeM%2BNHvTj2vO6LsexwKrl4D1fA%2FFynC2Ji9Yqf5rhRn7227kBZNQhvjIcQ%3D%3D"}],"group":"cf-nel","max_age":604800}', 'NEL': '{"success_fraction":0,"report_to":"cf-nel","max_age":604800}', 'Server': 'cloudflare', 'CF-RAY': '7fa7a9213f949da4-DME'}
+Response cookies: {}
+
+-----

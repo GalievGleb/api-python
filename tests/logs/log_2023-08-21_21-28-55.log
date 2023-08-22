@@ -1,0 +1,16 @@
+
+-----
+Test:test_user_register.py::TestUserRegister::test_create_user_successfully (call)
+Time:2023-08-21 21:28:55.586702
+Request method: POST
+Request URL: https://reqres.in/api/register
+Request data: {'password': '12335', 'username': 'learnqa', 'firstName': 'learnqa', 'lastName': 'learnqa', 'email': 'gleber08-21-202321%M55@example.com'}
+Request headers: {}
+Request cookies: {}
+
+Response code: 400
+Response text: {"error":"Note: Only defined users succeed registration"}
+Response header: {'Date': 'Mon, 21 Aug 2023 18:28:57 GMT', 'Content-Type': 'application/json; charset=utf-8', 'Content-Length': '57', 'Connection': 'keep-alive', 'X-Powered-By': 'Express', 'Access-Control-Allow-Origin': '*', 'Etag': 'W/"39-6jrJxn+7f+pQUhbPgNMst7tagpA"', 'Via': '1.1 vegur', 'CF-Cache-Status': 'DYNAMIC', 'Report-To': '{"endpoints":[{"url":"https:\\/\\/a.nel.cloudflare.com\\/report\\/v3?s=JLmDF9E1Qph%2BH4p9SSCSW7L%2F%2BuAVBfpUXpq4wgfPmq1vfFWCAWmbzgRxcYvNafpK8DEF2ckIg8uve%2Bl20OhGxZJ2VlZtPFefTKKkZLUpnCjKOxqYX2aqdKNQww%3D%3D"}],"group":"cf-nel","max_age":604800}', 'NEL': '{"success_fraction":0,"report_to":"cf-nel","max_age":604800}', 'Server': 'cloudflare', 'CF-RAY': '7fa4f055184c9daa-DME'}
+Response cookies: {}
+
+-----
