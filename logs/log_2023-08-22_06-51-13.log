@@ -1,0 +1,32 @@
+
+-----
+Test:test_user_get.py::TestUserGet::test_get_user_details_not_auth (call)
+Time:2023-08-22 06:51:13.709915
+Request method: GET
+Request URL: https://reqres.in/api/users/2
+Request data: None
+Request headers: {}
+Request cookies: {}
+
+Response code: 200
+Response text: {"data":{"id":2,"email":"janet.weaver@reqres.in","first_name":"Janet","last_name":"Weaver","avatar":"https://reqres.in/img/faces/2-image.jpg"},"support":{"url":"https://reqres.in/#support-heading","text":"To keep ReqRes free, contributions towards server costs are appreciated!"}}
+Response header: {'Date': 'Tue, 22 Aug 2023 03:51:14 GMT', 'Content-Type': 'application/json; charset=utf-8', 'Transfer-Encoding': 'chunked', 'Connection': 'keep-alive', 'X-Powered-By': 'Express', 'Access-Control-Allow-Origin': '*', 'Etag': 'W/"118-pbdwwFo9SKNhD3Lx5iHJyngpq00"', 'Via': '1.1 vegur', 'Cache-Control': 'max-age=14400', 'CF-Cache-Status': 'HIT', 'Age': '2614', 'Report-To': '{"endpoints":[{"url":"https:\\/\\/a.nel.cloudflare.com\\/report\\/v3?s=%2Fq5BnJE7XeE0QnOjOwdvoAVvps9j2iyh5PQts6pUcNxQ2iwJYBGT1xdPvHx5kX49m3Sw0YanfwBtd6ybo%2FTcVDP5xUybr1TwUMwFxEq0G%2BbgU5K4wSpqc88Ugw%3D%3D"}],"group":"cf-nel","max_age":604800}', 'NEL': '{"success_fraction":0,"report_to":"cf-nel","max_age":604800}', 'Vary': 'Accept-Encoding', 'Server': 'cloudflare', 'CF-RAY': '7fa827f92c0e4d90-DME', 'Content-Encoding': 'gzip'}
+Response cookies: {}
+
+-----
+
+-----
+Test:test_user_get.py::TestUserGet::test_get_user_details_auth_as_same_user (call)
+Time:2023-08-22 06:51:13.836992
+Request method: POST
+Request URL: https://reqres.in/api/login
+Request data: {'email': 'eve.holt@reqres.in', 'password': 'cityslicka'}
+Request headers: {}
+Request cookies: {}
+
+Response code: 200
+Response text: {"token":"QpwL5tke4Pnpja7X4"}
+Response header: {'Date': 'Tue, 22 Aug 2023 03:51:14 GMT', 'Content-Type': 'application/json; charset=utf-8', 'Content-Length': '29', 'Connection': 'keep-alive', 'X-Powered-By': 'Express', 'Access-Control-Allow-Origin': '*', 'Etag': 'W/"1d-lGCrvD6B7Qzk11+2C98+nGhhuec"', 'Via': '1.1 vegur', 'CF-Cache-Status': 'DYNAMIC', 'Report-To': '{"endpoints":[{"url":"https:\\/\\/a.nel.cloudflare.com\\/report\\/v3?s=6ajNAIeKIw9035u1OYZ7Bjuwk4oyZ4s2d1cw9JS0Z4%2Be5cixwVXb8iKFpn383l70cGpSeYOW0hYxOKFodBbE6HUYgi%2B3xUmZVNDCRf5ipXUYrcHi9hW7nF6YYA%3D%3D"}],"group":"cf-nel","max_age":604800}', 'NEL': '{"success_fraction":0,"report_to":"cf-nel","max_age":604800}', 'Server': 'cloudflare', 'CF-RAY': '7fa827f9ee1813ba-DME'}
+Response cookies: {}
+
+-----

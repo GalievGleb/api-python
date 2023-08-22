@@ -23,11 +23,12 @@ class BaseCase:
 
     def prepare_registration_data(self):
         return {
-            'password': 'pistol',
-            'email': 'eve.holt@reqres.in'
+            'email': 'eve.holt@reqres.in',
+            'password': 'pistol'
+
         }
     def prepare_registration_data_negative(self):
         return {
-            'password': 'Nope',
-            'email': 'FergusAndersen@reqres.in'
+            'email': 'FergusAndersen@reqres.in',
+            'password': 'Nope'
         }
