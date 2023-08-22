@@ -7,7 +7,7 @@ from selenium import webdriver
 # from selenium.webdriver.support import expected_conditions as EC
 from selenium.webdriver.chrome.options import Options
 
-from pages.main_page import Main_page
+from pages.main_page_register import Main_page
 
 
 
