@@ -27,6 +27,13 @@ class BaseCase:
             'password': 'pistol'
 
         }
+
+    def edit_data(self):
+        return {
+            "name": "Gleb",
+            "job": "zion resident"
+        }
+
     def prepare_registration_data_negative(self):
         return {
             'email': 'FergusAndersen@reqres.in',

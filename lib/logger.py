@@ -7,8 +7,6 @@ from requests import Response
 class Logger:
     project_root = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
     log_dir = os.path.join(project_root, 'logs')  # Директория, в которой будут храниться логи
-    if not os.path.exists(log_dir):
-        os.makedirs(log_dir)
 
     file_name = os.path.join(log_dir, f"log_{datetime.datetime.now().strftime('%Y-%m-%d_%H-%M-%S')}.log")
 
