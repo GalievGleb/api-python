@@ -9,7 +9,7 @@ from lib.base_class import Base
 # from utilities.logger import logger
 
 
-class Main_page(Base):
+class Main_page_register(Base):
     url = 'https://reqres.in/'
 
     def __init__(self, driver):
@@ -42,13 +42,14 @@ class Main_page(Base):
         return text
 
     # Methods
-    def product_confirmation(self):
+    def api_register(self):
         self.get_current_url()
         self.click_create_button()
         self.text_get_create_json()
 
+
 driver = webdriver.Chrome()
 driver.get("https://reqres.in/")  # Замените URL на нужный
-mp = Main_page(driver)
-mp.product_confirmation()
+mp = Main_page_register(driver)
+mp.api_register()
 driver.quit()
