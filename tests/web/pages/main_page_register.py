@@ -47,21 +47,8 @@ class Main_page(Base):
         self.click_create_button()
         self.text_get_create_json()
 
-
-# Укажите путь к исполняемому файлу ChromeDriver
-
-
-# Создаем экземпляр веб-драйвера (в данном случае, Chrome)
 driver = webdriver.Chrome()
-
-# Переходим на нужную веб-страницу
 driver.get("https://reqres.in/")  # Замените URL на нужный
-
-# Создаем экземпляр класса Main_page, передавая в него драйвер
 mp = Main_page(driver)
-
-# Далее можно вызывать методы класса Main_page
 mp.product_confirmation()
-
-# Не забудьте закрыть драйвер после использования
 driver.quit()
