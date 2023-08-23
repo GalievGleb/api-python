@@ -30,14 +30,14 @@ class Base():
         self.driver.save_screenshot(
             'C:\\Users\\galie\\Desktop\\Project_Aut\\Project_Automation\\screen\\' + name_screenshot)
 
-    """Method assert url"""
+        """Method assert url"""
 
     def assert_url(self, result):
         get_url = self.driver.current_url
         assert get_url == result
         print("Good value url")
 
-    """Сравнение JSON"""
+        """Сравнение JSON"""
 
     def compare_json(self, expected_json_str, actual_json_str):
         expected_json = json.loads(expected_json_str)
