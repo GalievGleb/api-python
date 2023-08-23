@@ -8,21 +8,17 @@ from tests.web.pages.main_page_get import Main_page_get
 from tests.web.pages.main_page_register import Main_page_register
 
 
-# @allure.description("Test main page Selenium")
-def test_main_web():
+
+def test_main_web(web_driver):
     print("\nStart Test 1")
 
-    driver = webdriver.Chrome()
-    driver.get("https://reqres.in/")
-
-    mpr = Main_page_register(driver)
+    mpr = Main_page_register(web_driver)
     mpr.api_register()
 
-    mpg = Main_page_get(driver)
+    mpg = Main_page_get(web_driver)
     mpg.api_login()
 
-    mpe = Main_page_edit(driver)
+    mpe = Main_page_edit(web_driver)
     mpe.api_edit()
 
-    driver.quit()
     print("Finish Test 1")

@@ -1,0 +1,16 @@
+
+-----
+Test:test_user_edit.py::TestUserEdit::test_edit_user (call)
+Time:2023-08-23 05:56:07.078465
+Request method: PUT
+Request URL: https://reqres.in/api/users/2
+Request data: {'name': 'Gleb', 'job': 'zion resident'}
+Request headers: {}
+Request cookies: {}
+
+Response code: 200
+Response text: {"name":"Gleb","job":"zion resident","updatedAt":"2023-08-23T02:56:07.810Z"}
+Response header: {'Date': 'Wed, 23 Aug 2023 02:56:07 GMT', 'Content-Type': 'application/json; charset=utf-8', 'Transfer-Encoding': 'chunked', 'Connection': 'keep-alive', 'X-Powered-By': 'Express', 'Access-Control-Allow-Origin': '*', 'Etag': 'W/"4c-tLkkP20IPKl0Cvy5nnHCCvy2O2A"', 'Via': '1.1 vegur', 'CF-Cache-Status': 'DYNAMIC', 'Report-To': '{"endpoints":[{"url":"https:\\/\\/a.nel.cloudflare.com\\/report\\/v3?s=n0ai7Hl5kBuJA7wwx%2F3HkUiO56UBpZOssKCf61T9FdiLWLvTkq9%2FOSK3qpAJNlWATC5ihjOGQL6ly8yJeLfoDxfKVwUxfaZ3zNHo7akPbz12yr8YM6Ant9yKCQ%3D%3D"}],"group":"cf-nel","max_age":604800}', 'NEL': '{"success_fraction":0,"report_to":"cf-nel","max_age":604800}', 'Vary': 'Accept-Encoding', 'Server': 'cloudflare', 'CF-RAY': '7fb014a03ef11654-DME', 'Content-Encoding': 'gzip'}
+Response cookies: {}
+
+-----
