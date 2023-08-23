@@ -1,7 +1,4 @@
-from random import random
-
 from lib.my_requests import MyRequests
-import pytest
 from lib.base_case import BaseCase
 from lib.assertions import Assertions
 

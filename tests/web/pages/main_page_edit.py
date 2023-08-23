@@ -1,12 +1,7 @@
-import allure
-from selenium import webdriver
 from selenium.webdriver.common.by import By
 from selenium.webdriver.support.wait import WebDriverWait
 from selenium.webdriver.support import expected_conditions as EC
 from lib.base_class import Base
-
-
-# from utilities.logger import logger
 
 
 class Main_page_edit(Base):
@@ -46,10 +41,3 @@ class Main_page_edit(Base):
         self.get_current_url()
         self.click_create_button_list()
         self.text_get_create_json_list()
-
-
-driver = webdriver.Chrome()
-driver.get("https://reqres.in/")  # Замените URL на нужный
-mp = Main_page_edit(driver)
-mp.api_edit()
-driver.quit()
