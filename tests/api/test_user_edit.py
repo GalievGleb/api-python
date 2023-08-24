@@ -14,6 +14,7 @@ class TestUserEdit(BaseCase):
         Assertions.assert_json_has_key(response1, "name")
         Assertions.assert_json_has_key(response1, "job")
         Assertions.assert_json_has_key(response1, "updatedAt")
+        return response1.json()
 
     def test_edit_user_negative(self):
         register_data = self.edit_data()
