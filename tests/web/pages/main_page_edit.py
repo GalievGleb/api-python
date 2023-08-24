@@ -31,13 +31,13 @@ class Main_page_edit(Base):
         self.get_create_button_list().click()
         print("Click create json button")
 
-    def text_get_create_json_list(self):
-        text = self.get_create_json_list().text
+    def text_get_create_json_list(self, response):
+        text = self.get_create_json_list().json
         print("Get text json_list selenium")
         return text
 
     # Methods
-    def api_edit(self):
+    def api_edit(self, response):
         self.get_current_url()
         self.click_create_button_list()
-        self.text_get_create_json_list()
+        self.text_get_create_json_list(response)

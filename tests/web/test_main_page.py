@@ -2,7 +2,6 @@ from tests.web.pages.main_page_edit import Main_page_edit
 from tests.web.pages.main_page_get import Main_page_get
 from tests.web.pages.main_page_register import Main_page_register
 
-
 def test_main_web(web_driver):
     print("\nStart Test main web 1")
 
